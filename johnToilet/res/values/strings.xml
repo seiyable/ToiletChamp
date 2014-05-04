@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">toiletchamp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title">toilet champ</string>
+    <string name="signup">Or Newcomer?</string>
+    <string name="accountid">Account ID (4 chars at min)</string>
+    <string name="password">Password (6 char at min)</string>
+    <string name="confirmpw">Confirm Password</string>
+    <string name="username">User Name(Displyed on web)</string>
+
+</resources>

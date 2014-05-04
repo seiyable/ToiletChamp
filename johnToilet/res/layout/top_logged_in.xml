@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo" />
+	
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:gravity="center_horizontal"
+	    android:layout_marginTop="20dp"
+	    android:orientation="horizontal" >
+
+    	<TextView
+       		android:id="@+id/textView1"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textColor="#ffffff"
+        	android:text="Logged In" />
+    	<TextView
+       		android:id="@+id/loggedInUser"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:textColor="#ffffff"
+        	android:text="xxxxx" />
+    </LinearLayout>
+    
+	<ImageButton
+    	android:id="@+id/continueBotton"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:background="@drawable/continue1" />
+
+	<ImageButton
+	    android:id="@+id/notmeButton"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_marginTop="10dp"
+	    android:background="@drawable/notme"/>
+	
+	    <EditText
+            android:id="@+id/editText3"
+            android:layout_width="105dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:text="@string/signup"
+            android:layout_marginTop="65dp"
+            android:textColor="#ffffff"
+            android:textSize="12sp" />
+
+        <ImageButton
+            android:id="@+id/signupButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/signup" />
+	
+</LinearLayout>
