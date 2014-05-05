@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>activity list</title>
+</head>
+<body>
+
+<p>
+The activities of the user, whose udid is {{udid}}, are:
+
+<ul class="activity_list">
+  {{#each items}}
+  <li>location: {{this.location}}, time: {{this.timestamp}}</li>
+  {{/each}}
+</ul>
+
+</p>
+
+</body>
+</html>

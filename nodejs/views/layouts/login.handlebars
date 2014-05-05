@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>log in</title>
+</head>
+<body>
+
+<h3>Test for login and image sending</h1> 
+<form method="post" action="/" enctype="multipart/form-data">
+<p>USER ID: <input type="text" name="username" /></p>
+<p>PASSWORD: <input type="password" name="password" /></p>
+
+<p><input type="file" name="file"/></p>
+
+
+<button type="submit">Log In!!</button>
+</form>
+<br>
+<!--
+<p>
+Result:
+{{#if auth_result}} <style color:"red">Success!</style>
+{{else}} <style color:"blue">Error..</style>
+{{/if}}
+</p>
+-->
+<p>
+The data you submitted:<br>
+<ul>
+<li>USER ID:{{username}}</li>
+<li>PASSWORD:{{password}}</li>
+</ul>
+</p>
+
+
+
+<h3>Test for adding user data</h3>
+<form method="post" action="/add_user" enctype="multipart/form-data">
+	<p>UDID: <input type="text" name="udid" /></p>
+	<p>username: <input type="text" name="username" /></p>
+	<p><input type="file" name="usericonURL"/></p>
+	<button type="submit">Add User!!</button>
+</form>
+
+<hr>
+
+
+
+
+<h3>Test for getting user data</h3>
+<form method="post" action="/get_user">
+	<p>UDID: <input type="text" name="udid" /></p>
+	<button type="submit">Get User!!</button>
+</form>
+
+<hr>
+
+
+
+
+<h3>Test for adding activity data</h3>
+<form method="post" action="/add_activity">
+	<p>UDID: <input type="text" name="udid" /></p>
+	<p>location: <input type="text" name="location" /></p>
+	<p>timestamp: <input type="text" name="timestamp" /></p>
+	<button type="submit">Add Activity!!</button>
+</form>
+
+<hr>
+
+
+
+
+<h3>Test for geting activity data</h3>
+<form method="post" action="/get_activity">
+	<p>UDID: <input type="text" name="udid" /></p>
+	<button type="submit">Get Activity!!</button>
+</form>
+
+<hr>
+
+
+
+
+</body>
+</html>
