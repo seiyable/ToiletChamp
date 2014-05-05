@@ -1,44 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              android:orientation="vertical"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/add_activity_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
 
-  <Button
-      android:id="@+id/add_activity_button"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Add a New Activity Data"/>
-  
-  <TextView
-      android:id="@+id/add_activity_text"
-      android:layout_width="wrap_content"
-      android:layout_height="wrap_content"
-      android:layout_marginTop="20dp" />
+        <Button
+            android:id="@+id/get_activity_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get a List of Activity Data" />
 
-  <ListView
-      android:id="@+id/activity_list"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content" >
-  </ListView>
+        <ListView
+            android:id="@+id/activity_list"
+            android:layout_width="match_parent"
+            android:layout_height="100dp" >
+        </ListView>
 
-  <Button
-      android:id="@+id/get_activity_button"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Get a List of Activity Data"/>
+        <Button
+            android:id="@+id/add_user_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add a New User" />
 
-  <Button
-      android:id="@+id/add_user_button"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Add a New User"/>
-
-  <Button
-      android:id="@+id/get_user_button"
-      android:layout_width="match_parent"
-      android:layout_height="wrap_content"
-      android:text="Get a User's Name and Photo"/>
-  
-</LinearLayout>
+        <Button
+            android:id="@+id/get_user_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get a User&apos;s Name and Photo" />
+    </LinearLayout>
